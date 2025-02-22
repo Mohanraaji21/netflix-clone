@@ -10,7 +10,7 @@ import { ToastContainer, toast } from 'react-toastify';
 const App = () => {
 
   const navigate = useNavigate();
-
+  
   useEffect(()=>{
     onAuthStateChanged(auth, async (user) => {
       if(user){
@@ -36,5 +36,4 @@ const App = () => {
     </div>
   )
 }
-
 export default App
